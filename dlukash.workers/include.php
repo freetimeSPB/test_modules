@@ -91,10 +91,31 @@ class CDlukashWorkers
 					self::makeJsonReply(array(), true, 'empty params');
 				}
 				break;
+			case 'delete':
+			
+				$ID = $arRequest['id'];
+				unset ($arRequest['id']);
+		  
+			    if($ID>0){
+					self::deleteStaffByID($ID);
+				}
+				else{
+					self::makeJsonReply(array(), true, 'empty params');
+				}
+				break;
 			case 'offices':
 				self::getAllOfficesWithID();
 				break;
-			default:
+			case 'workers':
+				self::getAllStaffWithID();
+				break;
+			case 'office_workers':
+				self::getAllStaffWithOffice();
+				break;
+			case 'add':
+				self::addStaff($arRequest);
+				break;	
+    		default:
 				self::makeJsonReply(array(), true, 'unknown method');
 		}
 	  }
@@ -260,7 +281,7 @@ class CDlukashWorkers
 			}
 		
 		header('Content-Type: application/json');
-		echo json_encode($result);
+		echo $result;
 		exit;
 	}
 }
