@@ -1,0 +1,4 @@
+<?php
+
+$MESS['WORKERS_DLUKASH_MENU_TITLE'] = 'Меню';
+$MESS['WORKERS_DLUKASH_SUBMENU_TITLE'] = 'Подменю';

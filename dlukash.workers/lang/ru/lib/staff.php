@@ -1,0 +1,5 @@
+<?php
+
+$MESS['WORKERS_DLUKASH_ID'] = 'ID';
+$MESS['WORKERS_DLUKASH_FIO'] = 'ФИО';
+$MESS['WORKERS_DLUKASH_PHONE'] = 'Телефон';

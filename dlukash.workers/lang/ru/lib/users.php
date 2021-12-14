@@ -1,0 +1,6 @@
+<?php
+
+$MESS['USERS_DLUKASH_ID'] = 'ID';
+$MESS['USERS_DLUKASH_LOGIN'] = 'Логин';
+$MESS['USERS_DLUKASH_PASSWD'] = 'Пароль';
+$MESS['USERS_DLUKASH_LAST_AUTH'] = 'Авторизация';
